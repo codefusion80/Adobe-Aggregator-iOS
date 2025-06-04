@@ -22,7 +22,8 @@ let package = Package(
         .package(url: "https://github.com/adobe/aepsdk-places-ios", exact: "5.0.0"),
         .package(url: "https://github.com/adobe/aepsdk-userprofile-ios.git", exact: "5.0.0"),
         .package(url: "https://github.com/adobe/aepsdk-media-ios.git", exact: "5.0.1"),
-        .package(url: "https://github.com/adobe/aepsdk-analytics-ios.git", exact: "5.0.2")
+        .package(url: "https://github.com/adobe/aepsdk-analytics-ios.git", exact: "5.0.2"),
+        .package(url: "https://github.com/adobe/aepsdk-edgebridge-ios.git", exact: "5.1.0")
         
     ],
     targets: [
@@ -43,7 +44,8 @@ let package = Package(
                 .product(name: "AEPPlaces", package: "aepsdk-places-ios"),
                 .product(name: "AEPUserProfile", package: "aepsdk-userprofile-ios"),
                 .product(name: "AEPMedia", package: "aepsdk-media-ios"),
-                .product(name: "AEPAnalytics", package: "aepsdk-analytics-ios")
+                .product(name: "AEPAnalytics", package: "aepsdk-analytics-ios"),
+                .product(name: "AEPEdgeBridge", package: "aepsdk-edgebridge-ios")
             ]
         )
     ]
